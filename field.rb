@@ -4,13 +4,13 @@ class Field
 
 	attr_accessor :field
 
-	def initialize
-		@field = create_field
+	def initialize(x,y)
+		@field = create_field(x,y)
 		
 	end
 
-	def create_field
-		Array.new(25) {Array.new(50, "-")}
+	def create_field(x,y)
+		Array.new(x) {Array.new(y, "-")}
 	end
 
 	def draw_field
@@ -20,8 +20,10 @@ class Field
 			
 		end
 	end
-
+#end class
 end
+
+
 
 
 

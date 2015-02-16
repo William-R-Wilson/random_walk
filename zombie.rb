@@ -1,3 +1,5 @@
+
+
 class Zombie
 
 	attr_accessor :position
@@ -11,6 +13,7 @@ class Zombie
 	end
 
 	def move
+		#move still needs a way to keep the zombie in bounds of the field
 		m = get_direction
 		if m == 1
 			unless position[0] == 24
@@ -32,8 +35,7 @@ class Zombie
 			puts "whoops!"
 		end
 	end
-
+#end class
 end
-
 
 
